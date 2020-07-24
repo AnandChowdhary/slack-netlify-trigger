@@ -1,7 +1,7 @@
-import polka from "polka";
+const polka = require("polka");
 const send = require("@polka/send-type");
 
-const server = polka().all("/", (_, response) => {
+const server = polka().all("/", (_: any, response: any) => {
   console.log("OK");
   return send(response, 200, {
     text: "Okay, I'm triggering a build on Netlify 🚀",
