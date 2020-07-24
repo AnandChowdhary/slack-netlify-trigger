@@ -1,0 +1,27 @@
+{
+  "name": "slack-netlify-trigger",
+  "version": "0.0.0",
+  "description": "Trigger a Netlify build webhook from a Slack message",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koj-co/slack-netlify-trigger.git"
+  },
+  "keywords": [
+    "webhook",
+    "netlify",
+    "slack",
+    "trigger",
+    "bot"
+  ],
+  "author": "Anand Chowdhary <mail@anandchowdhary.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/koj-co/slack-netlify-trigger/issues"
+  },
+  "homepage": "https://github.com/koj-co/slack-netlify-trigger#readme"
+}
