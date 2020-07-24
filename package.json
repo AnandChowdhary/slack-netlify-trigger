@@ -2,11 +2,12 @@
   "name": "slack-netlify-trigger",
   "version": "0.0.0",
   "description": "Trigger a Netlify build webhook from a Slack message",
-  "main": "index.ts",
+  "main": "dist/index.ts",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc index.ts",
-    "launch": "node index.js",
+    "build": "tsc",
+    "launch": "node dist/index.js",
     "semantic-release": "semantic-release"
   },
   "repository": {
