@@ -8,7 +8,7 @@ const server = polka().all("/", (_, response) => {
   });
 });
 
-(server as any).listen(3003, (error: any) => {
+(server as any).listen(process.env.PORT ?? 3003, (error: any) => {
   if (error) console.log(error);
-  console.log(`> Running on localhost:3003`);
+  console.log(`> Running on localhost:${process.env.PORT ?? 3003}`);
 });
