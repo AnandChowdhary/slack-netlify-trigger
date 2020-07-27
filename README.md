@@ -11,7 +11,7 @@ Automagically trigger a Netlify build webhook by posting a message on Slack.
 1. Create a Slack outgoing webhook with the URL (see [Outgoing webhooks](https://api.slack.com/outgoing-webhooks))
 1. Send the "trigger" message to your Slack channel
 
-<img alt="Screenshot of trigger message" width="400" src="https://raw.githubusercontent.com/koj-co/slack-netlify-trigger/master/Screen%20Shot%202020-07-24%20at%2017.05.31%402x.png">
+<img alt="Screenshot of trigger message" width="400" src="https://raw.githubusercontent.com/koj-co/slack-netlify-trigger/master/screenshot.png">
 
 ## ⚙️ Configuration
 
