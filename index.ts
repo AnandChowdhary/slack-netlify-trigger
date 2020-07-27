@@ -29,7 +29,7 @@ const server = polka()
   })
   .post("/:repo/:event", async (request: any, response: any) => {
     const repo = request.params.repo;
-    const event_type = request.params.repo;
+    const event_type = request.params.event;
     console.log("Triggering repository event", repo, event_type, new Date());
     try {
       await octokit.repos.createDispatchEvent({
