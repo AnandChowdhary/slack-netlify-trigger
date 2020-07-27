@@ -19,6 +19,9 @@ Add the following environment variables:
 
 - `NETLIFY_WEBHOOK` is the Netlify webhook endpoint
 - `SLACK_TOKEN` is the webhook token provided by Slack
+- `GH_PAT` is the GitHub Personal Access Token to trigger events
+
+The `/` endpoint is used to trigger the Netlify webhook, and the `/:repo/:event` endpoint creates a repository dispatch event.
 
 ## 👩‍💻 Development
 
