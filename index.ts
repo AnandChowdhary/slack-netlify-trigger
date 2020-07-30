@@ -31,6 +31,18 @@ const server = polka()
     const repo = request.params.repo;
     const event_type = request.params.event;
     console.log("Triggering repository event", repo, event_type, new Date());
+    // After 10 minutes, back-merge production to master
+    setTimeout(() => {
+      if (repo === "koj")
+        octokit.repos
+          .createDispatchEvent({
+            owner: "koj-co",
+            repo,
+            event_type: "merge_production",
+          })
+          .then(() => {})
+          .catch(() => {});
+    }, 60 * 1000 * 7);
     try {
       await octokit.repos.createDispatchEvent({
         owner: "koj-co",
