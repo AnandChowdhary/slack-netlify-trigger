@@ -53,6 +53,7 @@ const server = polka()
         text: "Okay, triggering! 🚀",
       });
     } catch (error) {
+      console.log(error);
       return send(response, 200, {
         text: "I got an error in trying to trigger this event.",
       });
